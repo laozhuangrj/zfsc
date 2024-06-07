@@ -1,0 +1,29 @@
+name: Build and Deploy GitBook
+
+on:
+  push:
+    branches:
+      - main  # 修改为你的默认分支名称
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install GitBook CLI
+        run: npm install -g gitbook-cli
+
+      - name: Install dependencies
+        run: gitbook install
+
+      - name: Build GitBook
+        run: gitbook build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          branch: gh-pages  # 用于部署的分支名称
+          folder: _book      # GitBook 构建后的输出目录
