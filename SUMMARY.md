@@ -1,6 +1,6 @@
 # Table of contents
 
-* [第一次租房想不被坑的预防针](README.md)
+* [租房前的预防针](README.md)
 * [一，线上定位置和价格](dai-geng-xin.md)
 * [二，找中介，找房东](er-zhao-zhong-jie-zhao-fang-dong.md)
 * [三，看房源，签合同](san-kan-fang-yuan-qian-he-tong.md)
