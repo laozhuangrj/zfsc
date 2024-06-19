@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "install": "yarn global add gitbook-cli@2.3.2",
-    "build": "gitbook install && gitbook build"
+    "build": "npx gitbook-cli@2.3.2 install && npx gitbook-cli@2.3.2 build"
   }
 }
