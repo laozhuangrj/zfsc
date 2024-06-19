@@ -1,10 +1,25 @@
-
 {
-  "title": "Your GitBook Title",
-  "author": "Your Name",
-  "description": "Description of your GitBook",
-  "plugins": ["expandable-chapters-small"],
+  "title": "My GitBook Title",
+  "author": "John Doe",
+  "description": "A comprehensive guide to GitBook deployment",
+  "plugins": [
+    "expandable-chapters-small",
+    "search",
+    "font-settings",
+    "theme-comscore"
+  ],
   "pluginsConfig": {
-    "expandable-chapters-small": true
+    "expandable-chapters-small": true,
+    "search": {
+      "enabled": true,
+      "maxDepth": 3
+    },
+    "font-settings": {
+      "family": "Arial, sans-serif",
+      "size": "medium"
+    },
+    "theme-comscore": {
+      "customCss": ".book { background-color: #f0f0f0; }"
+    }
   }
 }
