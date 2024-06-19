@@ -1,25 +1,6 @@
 {
   "title": "My GitBook Title",
   "author": "John Doe",
-  "description": "A comprehensive guide to GitBook deployment",
-  "plugins": [
-    "expandable-chapters-small",
-    "search",
-    "font-settings",
-    "theme-comscore"
-  ],
-  "pluginsConfig": {
-    "expandable-chapters-small": true,
-    "search": {
-      "enabled": true,
-      "maxDepth": 3
-    },
-    "font-settings": {
-      "family": "Arial, sans-serif",
-      "size": "medium"
-    },
-    "theme-comscore": {
-      "customCss": ".book { background-color: #f0f0f0; }"
-    }
-  }
+  "description": "Description of your GitBook",
+  "output": "_book"
 }
