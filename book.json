@@ -1,11 +1,10 @@
+
 {
   "title": "Your GitBook Title",
-  "description": "A short description of your GitBook",
   "author": "Your Name",
-  "language": "zh",
-  "structure": {
-    "readme": "README.md",
-    "summary": "SUMMARY.md"
-  },
-  "plugins": ["-sharing", "-fontsettings", "search"]
+  "description": "Description of your GitBook",
+  "plugins": ["expandable-chapters-small"],
+  "pluginsConfig": {
+    "expandable-chapters-small": true
+  }
 }
