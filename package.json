@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "build": "npx gitbook-cli install && npx gitbook-cli build"
-  }
-}
