@@ -1,11 +1,12 @@
 {
-  "builds": [
+  "version": 2,
+  "builds": [{ "src": "SUMMARY.md", "use": "@vercel/static-build" }],
+  "routes": [
+    { "handle": "filesystem" },
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "_book"
-      }
+      "src": "/(.*)",
+      "dest": "/$1",
+      "headers": { "cache-control": "s-maxage=1, stale-while-revalidate" }
     }
   ]
 }
