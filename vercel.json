@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "_book"
+      }
+    }
+  ],
+  "scripts": {
+    "build": "gitbook install && gitbook build"
+  }
+}
