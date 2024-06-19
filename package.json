@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build": "npx gitbook-cli@latest install && npx gitbook-cli@latest build"
+    "build": "npx gitbook-cli@2.3.2 install && npx gitbook-cli@2.3.2 build"
   }
 }
