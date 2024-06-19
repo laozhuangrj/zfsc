@@ -6,5 +6,12 @@
   },
   "dependencies": {
     "gitbook-cli": "^2.3.2"
+  },
+  "gitbook": {
+    "root": "./",
+    "structure": {
+      "summary": "SUMMARY.md"
+    },
+    "output": "./_book"
   }
 }
