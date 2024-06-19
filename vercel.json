@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "book.json", "use": "@vercel/node" }
-  ],
   "routes": [
     { "handle": "filesystem" },
     {
