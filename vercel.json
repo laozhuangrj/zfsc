@@ -1,6 +1,8 @@
 {
   "version": 2,
-  "builds": [{ "src": "SUMMARY.md", "use": "@vercel/static-build" }],
+  "builds": [
+    { "src": "package.json", "use": "@vercel/node" }
+  ],
   "routes": [
     { "handle": "filesystem" },
     {
