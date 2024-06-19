@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "book.json", "use": "@vercel/node" }
-  ],
+  "builds": [{ "src": "book.json", "use": "@vercel/node" }],
   "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
+    { "handle": "filesystem" },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
 }
