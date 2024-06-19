@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "builds": [{ "src": "book.json", "use": "@vercel/node" }],
+  "builds": [
+    { "src": "_book/**", "use": "@vercel/static" }
+  ],
   "routes": [
     { "handle": "filesystem" },
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "/$1",
+      "headers": { "cache-control": "s-maxage=1, stale-while-revalidate" }
     }
   ]
 }
