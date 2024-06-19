@@ -3,9 +3,3 @@
     "build": "npx gitbook-cli install && npx gitbook-cli build"
   }
 },
-  "dependencies": {
-    "gitbook-cli": "^2.3.2"
-  }
-}
-
- 
